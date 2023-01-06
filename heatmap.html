@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- This is the HTML code for a 2 by 2 grid of squares with different colors and a text box -->
+<html>
+
+</html>
+<!-- To use the CSS styles defined above, include a link to the stylesheet in the head of the HTML file -->
+
+<head>
+  <link rel="stylesheet" href="heatmap.css">
+</head>
+
+<!-- The body of the HTML file should contain the grid of squares and the text box -->
+
+<body>
+
+  <div class="container">
+    <!-- Each square is a div element with the appropriate class applied -->
+    <!-- Headers -->
+    <div></div>
+    <div>Investment</div>
+    <div>Research</div>
+    <div>News</div>
+    <div>Parliament</div>
+    <!-- First innovation-->
+    <div>Innovation 1</div>
+    <div class="triangleSquare" onmouseover="displayText('Information about innovations')"
+      onclick="keepText('square 1')">
+      <div class="square red"></div>
+      <!-- <div class="triangle triangleRed"></div> -->
+      <!-- <div class="triangle triangleYellow"></div> -->
+    </div>
+    <div class="square yellow" onmouseover="displayText('square 2')" onclick="keepText('square 2')"></div>
+    <div class="square blue" onmouseover="displayText('square 3')" onclick="keepText('square 3')"></div>
+    <div class="square red" onmouseover="displayText('square 4')" onclick="keepText('square 4')"></div>
+    <!-- Second innovation -->
+    <div>Innovation 2</div>
+    <div class="square red" onmouseover="displayText('square 1')" onclick="keepText('square 1')"></div>
+    <div class="square yellow" onmouseover="displayText('square 2')" onclick="keepText('square 2')"></div>
+    <div class="square blue" onmouseover="displayText('square 3')" onclick="keepText('square 3')"></div>
+    <div class="square red" onmouseover="displayText('square 4')" onclick="keepText('square 4')"></div>
+    <!-- Third innovation -->
+  </div>
+  </br>
+  <!-- The text box is a div element with an id of "text-box" -->
+  <div id="text-box"></div>
+
+  <!-- To use the JavaScript functions defined above, include a script tag at the end of the body of the HTML file -->
+  <script>
+    function displayText(text) {
+      document.getElementById('text-box').innerHTML = text;
+    }
+
+    function clearText() {
+      document.getElementById('text-box').innerHTML = '';
+    }
+  </script>
+</body>
+
+</html>

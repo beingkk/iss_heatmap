@@ -1,0 +1,64 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+}
+
+.square {
+  width: 50px;
+  /* This will make the squares take up 50% of the width of the parent element */
+  height: 50px;
+  /* This will maintain a 1:1 aspect ratio by setting the height to be equal to the width */
+  float: left;
+  margin: 10px;
+  /* This will add a margin of 10 pixels around each square */
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+
+/* This is the CSS code for the square made up of two triangles in different colors */
+
+.triangleSquare {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  /* This will allow the triangles to be positioned relative to the square */
+}
+
+.triangle {
+  /* width: 0;
+  height: 0; */
+  border-style: solid;
+  border-color: transparent transparent red transparent;
+  /* This will create a downward-pointing triangle with a red border */
+  background-color: red;
+  /* This will fill the triangle with red color */
+}
+
+.triangleRed {
+  border-color: transparent transparent red transparent;
+  /* This will create a downward-pointing triangle with a red border */
+  left: 0;
+  /* This will position the triangle at the left edge of the square */
+  top: 0;
+  /* This will position the triangle at the top edge of the square */
+}
+
+.triangleYellow {
+  border-color: transparent yellow transparent transparent;
+  /* This will create a rightward-pointing triangle with a yellow border */
+  right: 0;
+  /* This will position the triangle at the right edge of the square */
+  top: 0;
+  /* This will position the triangle at the top edge of the square */
+}
